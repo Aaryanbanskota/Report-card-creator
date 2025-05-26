@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Student Report Card</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-theme">
+
+<header id="topbar">
+  <button id="previewBtn" class="btn">👁️ Preview</button>
+  <button id="saveBtn" class="btn">💾 Save TXT</button>
+  <button id="downloadPdf" class="btn">📄 Download PDF</button>
+
+  <div id="themeSwitcher">
+    <button class="theme-btn" data-theme="light" title="Light Mode">🌞</button>
+    <button class="theme-btn" data-theme="dark" title="Dark Mode">🌙</button>
+    <button class="theme-btn" data-theme="gray" title="Gray Mode">🌫️</button>
+  </div>
+</header>
+
+<main>
+  <form id="reportForm" autocomplete="off">
+    <h1>Student Report Card Form</h1>
+    <label for="studentName">Student Name *</label>
+    <input type="text" id="studentName" placeholder="Enter student name" required />
+
+    <label for="rollNumber">Roll Number *</label>
+    <input type="text" id="rollNumber" placeholder="Enter roll number" required />
+
+    <label for="class">Class *</label>
+    <input type="text" id="class" placeholder="Enter class/grade" required />
+
+    <div id="subjectContainer">
+      <div class="subject-row">
+        <input type="text" placeholder="Subject Name *" required />
+        <input type="number" placeholder="Marks (0-100) *" min="0" max="100" required />
+      </div>
+    </div>
+
+    <button type="button" id="addSubject" class="btn add-subject">➕ Add Subject</button>
+  </form>
+
+  <section id="reportPreview" class="hidden"></section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
