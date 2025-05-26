@@ -14,7 +14,7 @@ A professional-grade, interactive Report Card Creator built with HTML, CSS, and 
 
 ## 🚀 Live Demo
 
-[View it live here](https://Aaryanbanskota.github.io/report-card-creator/)  
+[View it live here](https://aaryanbanskota.github.io/Report-card-creator/)  
 *(Replace with your actual GitHub Pages link)*
 
 ## 🛠️ How to Use
